@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <style type="text/css">
+  </style>
+</head>
+<body>
+
+  
+<h1>Celsius to Fahrenheit</h1>
+  <input id="inputC" placeholder="Celsius" oninput="tempConverter(this.value)" onchange="tempConverter(this.value)">
+<p>Fahrenheit: <span id="outputF"></span> °F</p>
+
+<script>
+function tempConverter(valNum) {
+  document.getElementById("outputF").innerHTML=(valNum*1.8)+32
+}
+</script>
+
+<h1>Fahrenheit to Celsius</h1>
+  <input id="inputF" placeholder="Fahrenheit" oninput="tempConverter2(this.value)" onchange="tempConverter2(this.value)">
+<p>Celcius: <span id="outputC"></span> °C</p>
+
+<script>
+function tempConverter2(valNum) {
+  document.getElementById("outputC").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+
+</body>
+</html>
